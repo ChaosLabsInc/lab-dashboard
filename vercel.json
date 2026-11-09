@@ -1,0 +1,28 @@
+{
+  "rewrites": [
+    {
+      "source": "/",
+      "destination": "/api/index?p=root"
+    },
+    {
+      "source": "/notes/:id",
+      "destination": "/api/index?p=board&nonce=:id"
+    },
+    {
+      "source": "/feed/:id",
+      "destination": "/api/index?p=feed&nonce=:id"
+    },
+    {
+      "source": "/sparkle/:id",
+      "destination": "/api/index?p=sparkle&nonce=:id"
+    },
+    {
+      "source": "/collect/:id",
+      "destination": "/api/index?p=collect&nonce=:id"
+    },
+    {
+      "source": "/bootstrap",
+      "destination": "/api/index?p=bootstrap"
+    }
+  ]
+}
